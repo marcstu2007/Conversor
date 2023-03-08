@@ -27,25 +27,46 @@ Realiza las siguientes conversiones en temperatura:
 ## Funcionamiento de la aplicación
 
 - Selecciona una opción de conversor moneda o de temperatura.
+
+
 ![red](/img/1.PNG) 
 - Ingresa la cantidad de dinero que deseas convertir a otra moneda
+
+
 ![red](/img/2.PNG) 
 - Elije a que moneda deseas convertir
+
+
 ![red](/img/3.PNG) 
 - Te mostrara la conversión en la moneda destino
+
+
 ![red](/img/4.PNG) 
-- Te preguntara si desea salir o deseas continuar dentro de la aplicación, si seleccionamos si 
-nos llevara al inicio del programa.
+- Te preguntara si desea salir o deseas continuar dentro de la aplicación, si seleccionamos si nos llevara al inicio del programa.
+
+
 ![red](/img/5.PNG) 
 - Si seleccionamos la conversión de temperaturas.
+
+
 ![red](/img/6.PNG) 
 - Ingresa la temperatura que deseas convertir
+
+
 ![red](/img/7.PNG) 
 - Selecciona la temperatura a la que deseas convertir.
+
+
 ![red](/img/8.PNG) 
 - El resultado de la conversión de temperatura.
+
+
 ![red](/img/9.PNG) 
 - Te pregunta si deseas terminar el programa.
+
+
 ![red](/img/10.PNG) 
 - Te muestra un mensaje al terminarse el programa.
+
+
 ![red](/img/11.PNG) 
