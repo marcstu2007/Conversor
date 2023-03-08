@@ -1,0 +1,80 @@
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Moneda extends JDialog {
+
+	private final JPanel contentPanel = new JPanel();
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		try {
+			Moneda dialog = new Moneda(4);
+			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+			dialog.setVisible(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Create the dialog.
+	 */
+	public Moneda(int cantidad) {
+		setBounds(100, 100, 450, 144);
+		getContentPane().setLayout(new BorderLayout());
+		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
+		getContentPane().add(contentPanel, BorderLayout.CENTER);
+		contentPanel.setLayout(null);
+		{
+			JLabel lblNewLabel = new JLabel("Elije la moneda para realizar tu conversión");
+			lblNewLabel.setBounds(10, 14, 251, 14);
+			contentPanel.add(lblNewLabel);
+		}
+		{
+			JComboBox comboBox = new JComboBox();
+			comboBox.setModel(new DefaultComboBoxModel(new String[] {"Convertir de la moneda de Quetzal a Dólar", "Convertir de la moneda de Quetzal a Euros", "Convertir de la moneda de Quetzal a Libras Esterlinas", "Convertir de la moneda de Quetzal a Yen Japonés", "Convertir de la moneda de Quetzal a Won sul-coreano", "Convertir de Dólar a la Quetzal", "Convertir de Euros a la Quetzal", "Convertir de Libras Esterlinas a la Quetzal", "Convertir de Yen Japonés a la Quetzal", "Convertir de Won sul-coreano a la Quetzal"}));
+			comboBox.setBounds(10, 39, 414, 22);
+			contentPanel.add(comboBox);
+		}
+		{
+			JPanel buttonPane = new JPanel();
+			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
+			getContentPane().add(buttonPane, BorderLayout.SOUTH);
+			{
+				JButton okButton = new JButton("OK");
+				okButton.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						JOptionPane.showMessageDialog(null, "Operación realizada correctamente" + cantidad);
+					}
+				});
+				okButton.setActionCommand("OK");
+				buttonPane.add(okButton);
+				getRootPane().setDefaultButton(okButton);
+			}
+			{
+				JButton cancelButton = new JButton("Cancel");
+				cancelButton.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						dispose();
+					}
+				});
+				cancelButton.setActionCommand("Cancel");
+				buttonPane.add(cancelButton);
+			}
+		}
+	}
+
+}

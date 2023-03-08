@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\marcs\Documents\Alura\Challenger\Conversor\.metadata\.plugins\org.eclipse.jdt.core
+1971213017.index
+3949129757.index
+851016538.index
+1865797976.index
